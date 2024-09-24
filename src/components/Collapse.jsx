@@ -46,7 +46,6 @@ const DescriptionCollapse = styled.div`
     }
 `
 
-
 function Collapse() {
     const [isRotate, setIsRotate] = useState(false)
     const divRef = useRef(null)
@@ -68,4 +67,4 @@ function Collapse() {
     )
 }
   
-  export default Collapse
+export default Collapse
