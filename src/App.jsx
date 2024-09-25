@@ -3,10 +3,11 @@ import Collapse from './components/Collapse.jsx'
 import Label from './components/Label.jsx';
 import Progress from './components/Progress.jsx';
 import Search from './components/Search.jsx';
-import { faChevronLeft, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faChevronLeft, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import Menu from './components/Menu.jsx';
 
-library.add( faChevronLeft, faMagnifyingGlass );
+library.add( faChevronLeft, faMagnifyingGlass, faBars );
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
 
       <h2>Search Bar</h2>
       <Search/>
+
+      <h2>Menu Mobile</h2>
+      <Menu/>
     </>
   )
 }
