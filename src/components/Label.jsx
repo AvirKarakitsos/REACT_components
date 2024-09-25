@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 let widthLabel = 55;
 let sizeToggle = 23;
-let slide = widthLabel - widthToggle;
+let slide = widthLabel - sizeToggle;
 
 const LabelComponent = styled.label`
     height: 25px;

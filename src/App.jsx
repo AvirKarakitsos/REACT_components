@@ -1,25 +1,29 @@
 //import './App.css'
 import Collapse from './components/Collapse.jsx'
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
 import Label from './components/Label.jsx';
 import Progress from './components/Progress.jsx';
+import Search from './components/Search.jsx';
+import { faChevronLeft, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
-library.add( faChevronLeft );
+library.add( faChevronLeft, faMagnifyingGlass );
 
 function App() {
   return (
     <>
       <h1>Hello World</h1>
 
-      <h2>Div Collapse</h2>
+      <h2>Collapse</h2>
       <Collapse/>
 
-      <h2>Div Label</h2>
+      <h2>Label Swapp</h2>
       <Label/>
       
-      <h2>div Progress</h2>
+      <h2>Progress Circle</h2>
       <Progress/>
+
+      <h2>Search Bar</h2>
+      <Search/>
     </>
   )
 }

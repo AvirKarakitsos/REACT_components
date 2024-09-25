@@ -33,7 +33,7 @@ const DescriptionCollapse = styled.div`
     height: ${(props) => (props.$active ? heightDescription : '0px')};
     position: relative;
     padding: 0 5px;
-    background-color: pink;
+    background-color: black;
     border-radius: 0 0 10px 10px;
     transform: ${(props) => (props.$active ? 'translateY(0px)' : `translateY(-${heightDescription})`)};
     transition: all ${speed};
