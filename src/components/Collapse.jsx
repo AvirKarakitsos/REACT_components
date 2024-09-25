@@ -52,11 +52,7 @@ function Collapse() {
 
     return (
         <DetailsCollapse className="details">
-            <TitleCollapse className="title" $active={isRotate} onClick={() => {
-                setIsRotate(value => !value )
-            }
-            } 
-            >
+            <TitleCollapse className="title" $active={isRotate} onClick={() => setIsRotate(value => !value )} >
                 <h2>Title</h2>
                 <FontAwesomeIcon icon="fa-solid fa-chevron-left"/>
             </TitleCollapse>
