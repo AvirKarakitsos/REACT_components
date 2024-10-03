@@ -70,8 +70,8 @@ function Menu() {
             <IconClose $isActive={isActive} onClick={() => setIsActive(false)}>X</IconClose>
             <List $isActive={isActive}>
                 <ListElement>Home</ListElement>
-                <ListElement>Item 1</ListElement>
-                <ListElement>Item 2</ListElement>
+                <ListElement>Page 1</ListElement>
+                <ListElement>Page 2</ListElement>
             </List>
         </DivContainer>
     )
