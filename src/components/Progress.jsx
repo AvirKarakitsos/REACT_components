@@ -10,8 +10,8 @@ const rotateAnimation = keyframes`
 `
 
 const DivContainer = styled.div`
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     background: radial-gradient(closest-side, #242424 79%, transparent 80% 100%), conic-gradient(orange 65%, #242424 0);
     border-radius: 50%;
     animation: ${rotateAnimation} 2s linear infinite;

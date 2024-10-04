@@ -5,24 +5,33 @@ import styled from "styled-components"
 //Parent Component CSS
 
 const TabContainer = styled.div`
-    height: 350px;
+    height: 150px;
     width: 500px;
 `
 
 const TabList = styled.ul`
     display: flex;
+    column-gap: 25px;
     list-style-type: none;
 `
 
 const ItemTabList = styled.li`
-    padding: 5px;
-    border: 1px solid green;
+    padding: 8px 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid grey;
+    border-bottom: none;
+    background-color: ${(props => props.color == props.id ? "orange" : "")};
     cursor: pointer;
 `
 
 const ElementSection = styled.div`
+    height: 100%;
     position: relative;
-    padding: 10px;
+    padding: 0 10px;
+    border: 2px solid grey;
+    border-top: 2px solid orange;
 `
 
 //Child Component CSS
@@ -30,7 +39,6 @@ const ElementSection = styled.div`
 const ElementContainer = styled.div`
     position: absolute;
     line-height: 1.5rem;
-    border: 1px solid red;
 
     h3 {
         margin: 10px;
@@ -56,8 +64,8 @@ function Tab() {
     return(
         <TabContainer>
             <TabList>
-                <ItemTabList onClick={() => setToggle(1)}>tab 1</ItemTabList>
-                <ItemTabList onClick={() => setToggle(2)}>tab 2</ItemTabList>
+                <ItemTabList onClick={() => setToggle(1)} color={toggle} id="1">tab 1</ItemTabList>
+                <ItemTabList onClick={() => setToggle(2)} color={toggle} id="2">tab 2</ItemTabList>
             </TabList>
             <ElementSection>
                 <Element title="Title Tab 1" toggle={toggle} dataId="1">

@@ -14,24 +14,36 @@ function App() {
   return (
     <>
       <h1>Hello World</h1>
-
-      <h2>Collapse</h2>
-      <Collapse/>
-
-      <h2>Label Swapp</h2>
-      <Label/>
       
-      <h2>Progress Circle</h2>
-      <Progress/>
+      <section className='section'>
+        <h2>Collapse</h2>
+        <Collapse/>
+      </section>
 
-      <h2>Search Bar</h2>
-      <Search/>
+      <section className='section'>
+        <h2>Label Swapp</h2>
+        <Label/>
+      </section>
 
-      <h2>Menu Mobile</h2>
-      <Menu/>
+      <section className='section'>
+        <h2>Progress Circle</h2>
+        <Progress/>
+      </section>
 
-      <h2>Tab</h2>
-      <Tab/>
+      <section className='section'>
+        <h2>Search Bar</h2>
+        <Search/>
+      </section>
+
+      <section className='section'>
+        <h2>Menu Mobile</h2>
+        <Menu/>
+      </section>
+
+      <section className='section'>
+        <h2>Tab</h2>
+        <Tab/>
+      </section>
     </>
   )
 }

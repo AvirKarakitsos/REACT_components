@@ -1,12 +1,12 @@
 import { useState } from "react"
 import styled from "styled-components"
 
-let widthLabel = 55;
+let widthLabel = 50;
 let sizeToggle = 23;
 let slide = widthLabel - sizeToggle;
 
 const LabelComponent = styled.label`
-    height: 25px;
+    height: 18px;
     width: ${widthLabel}px;
     display: flex;
     align-items: center;
