@@ -5,7 +5,6 @@ import styled from "styled-components"
 //Parent Component CSS
 
 const TabContainer = styled.div`
-    height: 150px;
     width: 500px;
 `
 
@@ -27,9 +26,8 @@ const ItemTabList = styled.li`
 `
 
 const ElementSection = styled.div`
-    height: 100%;
-    position: relative;
-    padding: 0 10px;
+    height: 200px;
+    padding: 0px 17px;
     border: 2px solid grey;
     border-top: 2px solid orange;
 `
@@ -37,11 +35,10 @@ const ElementSection = styled.div`
 //Child Component CSS
 
 const ElementContainer = styled.div`
-    position: absolute;
     line-height: 1.5rem;
 
     h3 {
-        margin: 10px;
+        margin: 25px 15px 15px 15px;
     }
 `
 
@@ -69,7 +66,7 @@ function Tab() {
             </TabList>
             <ElementSection>
                 <Element title="Title Tab 1" toggle={toggle} dataId="1">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ratione alias, incidunt nemo consequuntur optio tenetur sequi repellendus enim inventore. Mollitia culpa maiores blanditiis labore cupiditate perferendis ab. Aperiam, et.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ratione alias, incidunt nemo consequuntur optio tenetur sequi repellendus enim inventore. Mollitia culpa maiores blanditiis Aperiam, et. neque consequatur qui veniam, vitae ad expedita harum saepe tempora ur adipisicing el ur adipisicing el</p>
                 </Element>
                 <Element title="Title Tab 2" toggle={toggle} dataId="2">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi accusamus, rem obcaecati esse atque facere amet quia. Aperiam possimus, amet, neque consequatur qui veniam, vitae ad expedita harum saepe tempora?</p>

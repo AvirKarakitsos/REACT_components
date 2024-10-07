@@ -7,6 +7,7 @@ import { faBars, faChevronLeft, faMagnifyingGlass } from '@fortawesome/free-soli
 import { library } from '@fortawesome/fontawesome-svg-core';
 import Menu from './components/Menu.jsx';
 import Tab from './components/Tab.jsx';
+import Password from './components/Password.jsx';
 
 library.add( faChevronLeft, faMagnifyingGlass, faBars );
 
@@ -43,6 +44,11 @@ function App() {
       <section className='section'>
         <h2>Tab</h2>
         <Tab/>
+      </section>
+      
+      <section className='section'>
+        <h2>Password</h2>
+        <Password/>
       </section>
     </>
   )
