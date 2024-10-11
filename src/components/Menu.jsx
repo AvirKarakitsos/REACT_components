@@ -1,6 +1,6 @@
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import styled from "styled-components";
 
 const DivContainer = styled.div`
     height: 400px;
@@ -57,6 +57,10 @@ const ListElement = styled.li`
     justify-content: center;
     align-items: center;
     border-top: 1px solid white;
+
+    &:hover {
+        background-color: orange;
+    }
 `
 
 function Menu() {
