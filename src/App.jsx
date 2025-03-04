@@ -5,6 +5,8 @@ import Search from './components/Search.jsx';
 import Menu from './components/Menu.jsx';
 import Tab from './components/Tab.jsx';
 import Password from './components/Password.jsx';
+import ShowUp from './components/ShowUp.jsx';
+import Appear from './components/Appear.jsx';
 
 import { faBars, faChevronLeft, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -49,6 +51,12 @@ function App() {
       <section className='section'>
         <h2>Password</h2>
         <Password/>
+      </section>
+
+      <section className='section'>
+        <h2>Animation</h2>
+        <ShowUp/>
+        <Appear/>
       </section>
     </>
   )
